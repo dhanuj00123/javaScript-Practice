@@ -77,7 +77,7 @@ const cards = document.createElement("div");
 cards.classList.add("cards");
 
 let cardsHtml = genarateplayercard("Suriken", 20, 5.6);
-cardsHtml = cardsHtml + genarateplayercard("Raj", 12, 5.7);
+cardsHtml = cardsHtml + genarateplayercard("Random Name", 12, 5.7);
 cardsHtml = cardsHtml + genarateplayercard("Naruto", 32, 6.7);
 cardsHtml = cardsHtml + genarateplayercard("Monstergod", 19, 4.7);
 cardsHtml = cardsHtml + genarateplayercard("brudha", 19, 4.7);
