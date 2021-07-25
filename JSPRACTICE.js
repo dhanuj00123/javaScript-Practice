@@ -80,6 +80,7 @@ let cardsHtml = genarateplayercard("Suriken", 20, 5.6);
 cardsHtml = cardsHtml + genarateplayercard("Raj", 12, 5.7);
 cardsHtml = cardsHtml + genarateplayercard("Naruto", 32, 6.7);
 cardsHtml = cardsHtml + genarateplayercard("Monstergod", 19, 4.7);
+cardsHtml = cardsHtml + genarateplayercard("brudha", 19, 4.7);
 
 cards.innerHTML = cardsHtml;
 div.insertAdjacentElement("beforebegin", cards);
