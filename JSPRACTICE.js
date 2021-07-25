@@ -92,5 +92,28 @@ function deletecard(event) {
   const buttonThatGotClicked = event.currentTarget;
   buttonThatGotClicked.parentElement.remove();
 }
-
+//-----code for the COUNT and REMOVE button using forEach method------
 buttons.forEach((button) => button.addEventListener("click", deletecard));
+
+
+const button = document.querySelectorAll(".button");
+button.forEach(function (butt) {
+  butt.addEventListener("click", count);
+});
+let c = 0;
+function count() {
+  c++;
+  const clicks = `<h1 class="count-number">the button has been clicked ${c} times</h1>`;
+  cards.insertAdjacentHTML("beforebegin", clicks);
+}
+
+
+const removeButton = document.querySelectorAll(".button-remove");
+removeButton.forEach(function (removeClick) {
+  removeClick.addEventListener("click", remove);
+});
+function remove() {
+  const lines = document.querySelector(".count-number");
+  // console.log(lines);
+  lines.remove(lines);
+}
