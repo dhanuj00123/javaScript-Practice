@@ -81,7 +81,7 @@ cardsHtml = cardsHtml + genarateplayercard("Random Name", 12, 5.7);
 cardsHtml = cardsHtml + genarateplayercard("Naruto", 32, 6.7);
 cardsHtml = cardsHtml + genarateplayercard("Monstergod", 19, 4.7);
 cardsHtml = cardsHtml + genarateplayercard("brudha", 19, 4.7);
-
+//adding the card
 cards.innerHTML = cardsHtml;
 div.insertAdjacentElement("beforebegin", cards);
 
