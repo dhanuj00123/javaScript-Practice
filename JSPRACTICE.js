@@ -95,7 +95,6 @@ function deletecard(event) {
 //-----code for the COUNT and REMOVE button using forEach method------
 buttons.forEach((button) => button.addEventListener("click", deletecard));
 
-
 const button = document.querySelectorAll(".button");
 button.forEach(function (butt) {
   butt.addEventListener("click", count);
@@ -107,7 +106,6 @@ function count() {
   cards.insertAdjacentHTML("beforebegin", clicks);
 }
 
-
 const removeButton = document.querySelectorAll(".button-remove");
 removeButton.forEach(function (removeClick) {
   removeClick.addEventListener("click", remove);
@@ -116,4 +114,5 @@ function remove() {
   const lines = document.querySelector(".count-number");
   // console.log(lines);
   lines.remove(lines);
+  c--;
 }
